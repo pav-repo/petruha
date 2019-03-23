@@ -131,3 +131,42 @@
 	    font-size: 18px;
 	}
 }
+
+@media screen and (max-width: 600px){
+	.page-footer__contacts {
+	    flex-wrap: wrap;
+	}
+	.page-footer__mail {
+	    width: 100%;
+	    margin-right: 0;
+	    margin-bottom: 10px;
+	}
+	.page-footer__phone{
+		width: calc(100% - 44px);
+	}
+	.page-footer__info{
+		flex-wrap: wrap;
+	}
+	.copiright {
+	    margin-right: 0;
+	    width: 100%;
+	    order: 2;
+	}
+	.develop{
+		width: 100%;
+		order: 1;
+		margin-bottom: 10px;
+	}
+	.page-top h1 {
+	    margin-bottom: 30px;
+	}
+	h1 {
+	    font-size: 28px;
+	}
+	h2 {
+	    font-size: 24px;
+	}
+	h2 {
+	    font-size: 22px;
+	}
+}

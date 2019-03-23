@@ -21,6 +21,9 @@ $(document).ready(function() {
 	$("body").on("click", ".js-menu-mobile-toggle", function(e){
 		e.preventDefault();
 		$(this).toggleClass('open');
+		$('.menu-mobile__bg').fadeToggle();
+		$('.menu-mobile').slideToggle();
+		$('body').toggleClass('fixed');
 	});
 
 });
