@@ -28,7 +28,9 @@ gulp.task('scripts', function(){
         'app/libs/jquery/dist/jquery.min.js',
         'app/libs/modernizr/modernizr.min.js',
         'app/libs/flexibility/flexibility.js',
-        'app/libs/magnific/jquery.magnific-popup.js',
+        'app/libs/fullpage/scrolloverflow.min.js',
+        'app/libs/fullpage/fullpage.js',
+        'app/libs/fullpage/fullpage.extensions.min.js',
         'app/libs/slick/slick.min.js',
     ])
     .pipe(concat('libs.min.js'))

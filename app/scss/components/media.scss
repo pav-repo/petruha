@@ -130,6 +130,19 @@
 	body {
 	    font-size: 18px;
 	}
+	.pluso {
+	    position: relative!important;
+	}
+	.pluso-001010100101-06 .pluso-wrap {
+	    display: flex!important;
+	}
+	div[class*="pluso-"]{
+		width: auto!important;
+		margin-bottom: 20px;
+		a{
+			margin: 0px 5px 0 0px!important;
+		}
+	}
 }
 
 @media screen and (max-width: 600px){
