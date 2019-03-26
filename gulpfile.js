@@ -32,6 +32,7 @@ gulp.task('scripts', function(){
         'app/libs/fullpage/fullpage.js',
         'app/libs/fullpage/fullpage.extensions.min.js',
         'app/libs/slick/slick.min.js',
+        'app/libs/magnific/jquery.magnific-popup.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

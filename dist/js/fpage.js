@@ -6,7 +6,7 @@ $(document).ready(function() {
 		//scrollHorizontally: true,
 		//scrollBar:true,
 		css3: true,
-		//anchors:['firstPage', 'secondPage'],
+		//anchors:['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide', 'fifthSlide'],
 		navigation: true,
 		sectionSelector: '.screen-item',
 		//scrollOverflow:true,
@@ -31,7 +31,7 @@ $(document).ready(function() {
 	// $.fn.fullpage.setAllowScrolling(false);
 
 
-	//slider-doctor
+
 	if ($('.raffle-slider').length>0) {
 		var $gallery = $('.raffle-slider');
 		$gallery.on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -72,4 +72,71 @@ $(document).ready(function() {
             })
         })
 	};
+
+	if ($('.top-slider').length>0) {
+		var $gallery = $('.top-slider');
+
+	    $gallery.slick({
+			//speed: 1250,
+			swipe: true,
+			swipeToSlide: true,
+			touchThreshold: 10,
+			arrows:false,
+			dots:false,
+			fade: true,
+			useTransform:true,
+			accessibility: false,
+			infinite: false,
+			// slidesToShow: 3,
+  	// 		slidesToScroll: 1,
+	    });
+	};
+
+
+	$("body").on("click", ".js-page-footer__link", function(e){
+		e.preventDefault();
+		fullpage_api.moveTo('catalog', 1);
+	});
+	$("body").on("click", ".js-scrollToHistory", function(e){
+		e.preventDefault();
+		fullpage_api.moveTo('history', 1);
+	});
+	$("body").on("click", ".js-scrollToRaffle", function(e){
+		e.preventDefault();
+		fullpage_api.moveTo('raffle', 1);
+	});
+
+
+
+	var $btns = $('.product-filter__item').click(function() {
+	  	if (this.id == 'all') {
+	    	$('.product__item').fadeIn(450);
+	  	} else {
+	    	var $el = $('.' + this.id).fadeIn(450);
+	    	$('.product__item').not($el).hide();
+	  	}
+	  	$btns.removeClass('active');
+	  	$(this).addClass('active');
+	});
+
+
+	//POPUP-INLINE
+	$('.js-popup-inline').magnificPopup({
+		type: 'inline',
+		removalDelay: 500,
+        fixedContentPos: false,
+		callbacks: {
+			beforeOpen: function() {
+				this.st.mainClass = this.st.el.attr('data-effect');
+			},
+            // open: function(){
+            //     $('body').addClass('noscroll');
+            // },
+            // close: function() {
+            //      $('body').removeClass('noscroll');
+            // }
+		},
+
+		//midClick: true,
+	});
 });

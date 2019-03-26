@@ -25,8 +25,8 @@
 							<a href="#" class="top-nav__link">Маринады Homestyle</a>
 							<a href="#" class="top-nav__link">Колбаски</a>
 							<a href="#" class="top-nav__link">Котлеты</a>
-							<a href="#" class="top-nav__link">Рецептура</a>
-							<a href="#" class="top-nav__link">Мероприятия</a>
+							<a href="#" class="top-nav__link js-scrollToHistory">Рецептура</a>
+							<a href="#" class="top-nav__link js-scrollToRaffle">Мероприятия</a>
 						</nav>
 						<div class="menu-mobile-toggle js-menu-mobile-toggle">
 						  	<span></span>
@@ -49,9 +49,62 @@
 			<div class="menu-mobile__bg"></div>
 			<div id="screen">
 				<div class="screen-item screen-item--top" data-anchor="top">
-					<div class="container-fluid">
-						Top
+					<div class="top-slider">
+						<div class="top-slider__item">
+							<div class="top-slider__img" style="background-image: url(img/content/top-slide1.jpg)">1</div>
+							<div class="container-fluid">
+								<div class="top-slider__info">
+									<div class="top-slider__title">
+										Всегда<br> получается<span class="colon">:</span>
+									</div>
+									<div class="top-slider__count">Блюдо 1 из 17</div>
+									<div class="top-slider__txt">
+										<span>
+											Бедро в маринаде розмарин и оливковое<br> масло по французскому рецепту
+										</span>
+									</div>
+								</div>
+								<div class="top-slider__labels">
+									<div class="top-slider__label">Дома</div>
+									<div class="top-slider__label">На природе</div>
+									<div class="top-slider__label">Для гостей</div>
+								</div>
+							</div>
+						</div>
+						<div class="top-slider__item">
+							<div class="top-slider__img" style="background-image: url(img/content/top-slide1.jpg)">1</div>
+							<div class="container-fluid">
+								<div class="top-slider__info">
+									<div class="top-slider__title">
+										Test<span class="colon">:</span>
+									</div>
+									<div class="top-slider__count">Блюдо 2 из 17</div>
+									<div class="top-slider__labels">
+										<div class="top-slider__label">На природе</div>
+										<div class="top-slider__label">Романтический ужин</div>
+										<div class="top-slider__label">Вечеринка дома</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="top-slider__item">
+							<div class="top-slider__img" style="background-image: url(img/content/top-slide1.jpg)">1</div>
+							<div class="container-fluid">
+								<div class="top-slider__info">
+									<div class="top-slider__title">
+										Test 2<span class="colon">:</span>
+									</div>
+									<div class="top-slider__count">Блюдо 3 из 17</div>
+									<div class="top-slider__labels">
+										<div class="top-slider__label">Для всей семьи</div>
+										<div class="top-slider__label">Для гостей</div>
+										<div class="top-slider__label">На природе</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
+		
 				</div>
 				<div class="screen-item screen-item--catalog" data-anchor="catalog">
 					<div class="catalog">
@@ -62,7 +115,7 @@
 					</div>
 					<div class="container-fluid">
 						<div class="catalog-items">
-							<div class="catalog__info">
+							<a href="#" class="catalog__info">
 								<div class="catalog__number">01</div>
 								<div class="catalog__title">
 									Маринады<br> Grill
@@ -73,8 +126,8 @@
 									<div class="catalog__label">Романтический ужин</div>
 									<div class="catalog__label">Вечеринка дома</div>
 								</div>
-							</div>
-							<div class="catalog__info">
+							</a>
+							<a href="#" class="catalog__info">
 								<div class="catalog__number">02</div>
 								<div class="catalog__title">
 									Маринады<br> Homestyle
@@ -84,8 +137,8 @@
 									<div class="catalog__label">Выезд на природу</div>
 									<div class="catalog__label">Вечеринка дома</div>
 								</div>
-							</div>
-							<div class="catalog__info">
+							</a>
+							<a href="#" class="catalog__info">
 								<div class="catalog__number">03</div>
 								<div class="catalog__title">
 									Колбаски
@@ -95,8 +148,8 @@
 									<div class="catalog__label">Выезд на природу</div>
 									<div class="catalog__label">Вечеринка дома</div>
 								</div>
-							</div>
-							<div class="catalog__info">
+							</a>
+							<a href="#" class="catalog__info">
 								<div class="catalog__number">04</div>
 								<div class="catalog__title">
 									Котлеты <sup class="new">New</sup>
@@ -105,7 +158,7 @@
 									<div class="catalog__label">Для всей семьи</div>
 									<div class="catalog__label">Романтический ужин</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -172,17 +225,17 @@
 									Продукция
 								</div>
 								<div class="product-filter">
-									<a href="#" class="product-filter__item">Для всей семьи</a>
-									<a href="#" class="product-filter__item">На природе</a>
-									<a href="#" class="product-filter__item">Романтический ужин</a>
-									<a href="#" class="product-filter__item">Вечеринка дома</a>
-									<a href="#" class="product-filter__item">Все</a>
+									<a href="#" class="product-filter__item" id="a">Для всей семьи</a>
+									<a href="#" class="product-filter__item" id="b">На природе</a>
+									<a href="#" class="product-filter__item" id="c">Романтический ужин</a>
+									<a href="#" class="product-filter__item" id="d">Вечеринка дома</a>
+									<a href="#" class="product-filter__item active" id="all">Все</a>
 								</div>
 							</div>
 							<div class="product">
 								<div class="group-title">Маринады Grill</div>
 								<div class="product__list">
-									<a href="#" class="product__item">
+									<a href="#product1" class="product__item a js-popup-inline" data-effect="mfp-zoom-in">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product1.png" alt="">
@@ -210,7 +263,7 @@
 											</div>
 										</div>
 									</a>
-									<a href="#" class="product__item">
+									<a href="#" class="product__item b">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product2.png" alt="">
@@ -238,7 +291,7 @@
 											</div>
 										</div>
 									</a>
-									<a href="#" class="product__item">
+									<a href="#" class="product__item a">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product3.png" alt="">
@@ -266,7 +319,7 @@
 											</div>
 										</div>
 									</a>
-									<a href="#" class="product__item">
+									<a href="#" class="product__item a">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product4.png" alt="">
@@ -294,7 +347,7 @@
 											</div>
 										</div>
 									</a>
-									<a href="#" class="product__item">
+									<a href="#" class="product__item a">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product5.png" alt="">
@@ -322,7 +375,7 @@
 											</div>
 										</div>
 									</a>
-									<a href="#" class="product__item">
+									<a href="#" class="product__item a">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product6.png" alt="">
@@ -353,7 +406,7 @@
 								</div>
 								<div class="group-title">Маринады Homestyle</div>
 								<div class="product__list">
-									<a href="#" class="product__item">
+									<a href="#" class="product__item b">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product1.png" alt="">
@@ -381,7 +434,7 @@
 											</div>
 										</div>
 									</a>
-									<a href="#" class="product__item">
+									<a href="#" class="product__item c">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product2.png" alt="">
@@ -409,7 +462,7 @@
 											</div>
 										</div>
 									</a>
-									<a href="#" class="product__item">
+									<a href="#" class="product__item c">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product3.png" alt="">
@@ -440,7 +493,7 @@
 								</div>
 								<div class="group-title">Котлеты</div>
 								<div class="product__list">
-									<a href="#" class="product__item">
+									<a href="#" class="product__item d">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product1.png" alt="">
@@ -468,7 +521,7 @@
 											</div>
 										</div>
 									</a>
-									<a href="#" class="product__item">
+									<a href="#" class="product__item b">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product2.png" alt="">
@@ -496,7 +549,7 @@
 											</div>
 										</div>
 									</a>
-									<a href="#" class="product__item">
+									<a href="#" class="product__item b">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product3.png" alt="">
@@ -524,7 +577,7 @@
 											</div>
 										</div>
 									</a>
-									<a href="#" class="product__item">
+									<a href="#" class="product__item d">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product4.png" alt="">
@@ -552,7 +605,7 @@
 											</div>
 										</div>
 									</a>
-									<a href="#" class="product__item">
+									<a href="#" class="product__item c">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product5.png" alt="">
@@ -580,7 +633,7 @@
 											</div>
 										</div>
 									</a>
-									<a href="#" class="product__item">
+									<a href="#" class="product__item a">
 										<div class="product__inner">
 											<div class="product__img">
 												<img src="img/content/product6.png" alt="">
@@ -733,8 +786,11 @@
 				</div>
 			</div>
 			<div class="page-footer__link__wrapper">
-				<a href="#" class="page-footer__link"></a>
+				<a href="#" class="page-footer__link js-page-footer__link"></a>
 			</div>
+		</div>
+		<div id="product1" class="popup mfp-with-anim mfp-hide">
+			test
 		</div>
 		<script src="js/libs.min.js"></script>
 		<script src="js/interface.js"></script>

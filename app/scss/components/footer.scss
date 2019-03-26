@@ -102,9 +102,19 @@
 }
 
 .page-footer__link{
-	border: 1px solid #CDCDCD;
+	position: relative;
 	width: 66px;
 	height: 66px;
 	display: inline-block;
 	background: #fff url(../img/svg/link.svg) center no-repeat;
+	&:before{
+		content: "";
+		display: block;
+		width: calc(100% - 4px);
+		height: calc(100% - 4px);
+		position: absolute;
+		top: 2px;
+		left: 2px;
+		border: 1px solid #CDCDCD;
+	}
 }
