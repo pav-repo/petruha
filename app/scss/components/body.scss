@@ -58,7 +58,7 @@ body {
 	color: $base-color;
 	    line-height: 1.4;
 	    &.fixed{
-	    	overflow: hidden; 
+	    	overflow: hidden!important; 
 	    }
 }
 

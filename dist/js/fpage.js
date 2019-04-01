@@ -53,22 +53,22 @@ $(document).ready(function() {
 			infinite: false,
 			// slidesToShow: 3,
   	// 		slidesToScroll: 1,
-  			responsive: [
-			    {
-			      breakpoint: 800,
-			      settings: {
-			        slidesToShow: 2,
-			        slidesToScroll: 1,
-			      }
-			    },
-			]
+  	// 		responsive: [
+			//     {
+			//       breakpoint: 800,
+			//       settings: {
+			//         slidesToShow: 2,
+			//         slidesToScroll: 1,
+			//       }
+			//     },
+			// ]
 	    });
 	    $('.raffle-slider__pager ul li').each( function( i ) {
             $('.raffle-slider__pager .slide-' + i + ' a').click(function(e){
                 e.preventDefault();
                 $('.raffle-slider__pager a').removeClass('active');
                 $(this).addClass('active');
-                $gallery.slick('slickGoTo', i);
+                $('.raffle-slider').slick('slickGoTo', i);
             })
         })
 	};
@@ -91,11 +91,20 @@ $(document).ready(function() {
   	// 		slidesToScroll: 1,
 	    });
 	};
+	$("body").on("click", ".js-changeDish", function(e){
+		e.preventDefault();
+		$('.top-slider').slick('slickNext');
+	});
 
 
 	$("body").on("click", ".js-page-footer__link", function(e){
 		e.preventDefault();
-		fullpage_api.moveTo('catalog', 1);
+		$('.popup-catalog').fadeIn();
+		//fullpage_api.moveTo('catalog', 1);
+	});
+	$("body").on("click", ".js-popup-catalog__close", function(e){
+		e.preventDefault();
+		$('.popup-catalog').fadeOut();
 	});
 	$("body").on("click", ".js-scrollToHistory", function(e){
 		e.preventDefault();
@@ -111,9 +120,11 @@ $(document).ready(function() {
 	var $btns = $('.product-filter__item').click(function() {
 	  	if (this.id == 'all') {
 	    	$('.product__item').fadeIn(450);
+	    	$('.group-title').show();
 	  	} else {
 	    	var $el = $('.' + this.id).fadeIn(450);
 	    	$('.product__item').not($el).hide();
+	    	$('.group-title').hide();
 	  	}
 	  	$btns.removeClass('active');
 	  	$(this).addClass('active');
@@ -125,6 +136,7 @@ $(document).ready(function() {
 		type: 'inline',
 		removalDelay: 500,
         fixedContentPos: false,
+        closeBtnInside:true,
 		callbacks: {
 			beforeOpen: function() {
 				this.st.mainClass = this.st.el.attr('data-effect');

@@ -4,14 +4,102 @@
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 0) {
-
 }
 
 
+
 //MEDIA
+@media screen and (max-height: 1500px){
+	.history-wrap {
+	    padding-top: 100px;
+	}
+	.history-title {
+	    font-size: 88px;
+	    line-height: 70px;
+	    margin-bottom: 50px;
+	}
+	.history-list__title {
+	    margin-bottom: 10px;
+	}
+	.history-list__number {
+	    height: 110px;
+	}
+	.history-list__item {
+	    padding-top: 75px;
+	}
+}
+
+
+@media screen and (max-width: 1600px){
+	.history-wrap {
+	    padding-top: 100px;
+	}
+	.history-title {
+	    font-size: 88px;
+	    line-height: 70px;
+	    margin-bottom: 50px;
+	}
+	.history-list__title {
+	    margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 1400px){
+	.history-list__number {
+	    height: 110px;
+	}
+	.history-list__item {
+	    padding-top: 75px;
+	}
+	.raffle-slider-wrapper {
+	    padding-top: 135px;
+	}
+	.raffle-slider__img {
+	    height: 415px;
+	    //background-size: contain;
+	    //box-shadow: 0 36px 43px -34px rgba(132, 90, 141, 0.8);
+	    background-position: left top; 
+	}
+}
+
+//HEIGHT
+@media screen and (max-height: 800px){
+	.history-list__title {
+	    font-size: 34px;
+	    margin-bottom: 20px;
+	}
+	.history-list__number {
+	    height: 80px;
+	}
+	.history-list__item {
+	    padding-top: 53px;
+	}
+	.raffle-slider__img {
+	    height: 350px;
+	}
+	.raffle-slider{
+		margin-bottom: 0;
+	}
+}
+
 @media screen and (max-width: 1300px){
 	.page-top .page-container {
 	    padding-left: 113px;
+	}
+	.product__inner {
+	    position: relative;
+	}
+	.product__link {
+	    position: absolute;
+	    bottom: -24px;
+	    left: 50%;
+	    margin-left: -24px;
+	}
+	.product__item {
+	    padding-right: 20px;
+	}
+	.product__list {
+	    margin-right: -20px;
 	}
 }
 
@@ -79,6 +167,20 @@
 	.page-footer__info {
 	    order: 2;
 	    width: 100%;
+	}
+	.top-slider-blur {
+	    width: 475px;
+	}
+	.top-slider__title {
+	    font-size: 80px;
+	    line-height: 68px;
+	}
+	.top-slider__count {
+	    padding-left: 5px;
+	}
+	.top-slider__txt,
+	.top-slider__buttons{
+	    margin-left: 5px;
 	}
 }
 

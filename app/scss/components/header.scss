@@ -8,6 +8,10 @@
 	&.fixed{
 		box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.12);
 	}
+    &.active{
+        box-shadow: none;
+        background: #DF2527;
+    }
 }
 
 .top-nav{
@@ -20,6 +24,9 @@
 	&:last-child{
 		margin-right: 0;
 	}
+    &:hover{
+        color: #DF2527;
+    }
 }
 
 .page-header__wrapper{
@@ -40,7 +47,7 @@
 
 
 .menu-mobile-toggle{
-  width: 40px;
+  width: 32px;
   height: 32px;
   position: relative;
   transform: rotate(0deg);
@@ -67,24 +74,34 @@
 }
 
 .menu-mobile-toggle span:nth-child(2) {
-  top: 13px;
+  top: 10px;
+  width: 27px;
+      left: 5px;
 }
 
 .menu-mobile-toggle span:nth-child(3) {
-  top: 27px;
+      top: 20px;
+    width: 20px;
+    left: 12px;
 }
 
 .menu-mobile-toggle.open span:nth-child(1) {
   top: 13px;
   transform: rotate(135deg);
+  background: #fff;
 }
 
 .menu-mobile-toggle.open span:nth-child(2) {
   opacity: 0;
   left: -60px;
+  width: 32px;
+  background: #fff;
 }
 
 .menu-mobile-toggle.open span:nth-child(3) {
   top: 13px;
   transform: rotate(-135deg);
+  width: 32px;
+  left: 0;
+  background: #fff;
 }

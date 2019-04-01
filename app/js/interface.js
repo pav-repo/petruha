@@ -22,7 +22,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(this).toggleClass('open');
 		$('.menu-mobile__bg').fadeToggle();
-		$('.menu-mobile').slideToggle();
+		$('.menu-mobile').slideToggle(100);
 		$('.page-header').toggleClass('active');
 		$('body').toggleClass('fixed');
 	});
