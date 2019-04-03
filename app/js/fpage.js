@@ -117,7 +117,8 @@ $(document).ready(function() {
 
 
 
-	var $btns = $('.product-filter__item').click(function() {
+	var $btns = $('.product-filter__item').click(function(e) {
+		e.preventDefault();
 	  	if (this.id == 'all') {
 	    	$('.product__item').fadeIn(450);
 	    	$('.group-title').show();
@@ -141,12 +142,12 @@ $(document).ready(function() {
 			beforeOpen: function() {
 				this.st.mainClass = this.st.el.attr('data-effect');
 			},
-            // open: function(){
-            //     $('body').addClass('noscroll');
-            // },
-            // close: function() {
-            //      $('body').removeClass('noscroll');
-            // }
+            open: function(){
+                $('body').addClass('noscroll');
+            },
+            close: function() {
+                 $('body').removeClass('noscroll');
+            }
 		},
 
 		//midClick: true,

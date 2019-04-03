@@ -56,10 +56,11 @@ body {
 	font-size: $default-size-font;
 	font-family: $default-font;
 	color: $base-color;
-	    line-height: 1.4;
-	    &.fixed{
-	    	overflow: hidden!important; 
-	    }
+    line-height: 1.4;
+    &.noscroll{
+    	overflow: hidden!important; 
+    	//position: fixed;
+    }
 }
 
 textarea,input {

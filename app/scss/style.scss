@@ -428,9 +428,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 .product-filter__item{
 	margin-right: 25px;
+	margin-bottom: 20px;
 	    border-radius: 2px 13px 2px 13px;
     background: #DF2527;
     font-size: 20px;
@@ -590,7 +592,9 @@
 }
 
 .screen-item--history{
-	//padding-top: 80px;
+	.container-fluid{
+		height: 100%;
+	}
 	
 	&:before{
 		content: "";
@@ -635,7 +639,8 @@
 .history-wrap{
 	display: flex;
 	padding-top: 150px;
-	padding-bottom: 70px
+	padding-bottom: 70px;
+	height: 100%;
 }
 .history-list{
 	padding-right: 91px;
@@ -643,10 +648,26 @@
 	position: relative;
 }
 .history-info{
-	padding-left: 91px;
-	width: 50%;
-	
+	// padding-left: 91px;
+	// width: 50%;
+
+	    padding-left: 91px;
+    width: 50%;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    //transform: translateY(-50%);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
 }
+
+.fp-viewing-history{
+	.history-info{
+		opacity: 1;
+	}
+}
+
 .history-title{
 	font-size: 120px;
     line-height: 100px;
@@ -853,12 +874,7 @@
 
 .top-slider{
 	display: none;
-	// position: absolute;
-	// left: 0;
-	// top: 0;
-	// width: 100%;
 	height: 100%;
-	//background: #fff;
 	.slick-track,
 	.slick-list{
 		height: 100%;
@@ -869,9 +885,32 @@
 }
 
 .top-slider__item{
-	//padding-left: 400px;
 	.container-fluid{
 		height: 100%;
+	}
+	&.violet-sqheme{
+		.top-slider__txt span {
+		    background: #845A8D;
+		}
+		.top-slider-blur:before {
+		    background: rgba(113, 67, 123, 0.4);
+		}
+	}
+	&.orange-sqheme{
+		.top-slider__txt span {
+		    background: #e69a0e;
+		}
+		.top-slider-blur:before {
+		    background: rgba(230, 154, 14, 0.4);
+		}
+	}
+	&.red-sqheme{
+		.top-slider__txt span {
+		    background: #BE011D;
+		}
+		.top-slider-blur:before {
+		    background: rgba(190, 1, 29, 0.4);
+		}
 	}
 }
 .top-slider__img{
@@ -948,9 +987,6 @@
 	line-height: 1.15;
 	margin-left: 117px;
 	margin-bottom: 46px;
-	span{
-		background: #845A8D;
-	}
 }
 
 
@@ -1136,10 +1172,6 @@ button.mfp-arrow{
     background-size: cover;
     display: inline-block;
     text-indent: -9999em;
-    // &:hover{
-    // 	background: url(../img/svg/close-h.svg) no-repeat;
-    // 	background-size: cover;
-    // }
 }
 
 .fp-viewing-catalog .top-nav__link,
@@ -1169,7 +1201,6 @@ button.mfp-arrow{
     	top: 0;
     	width: 100%;
     	height: 100%;
-    	background: rgba(132,90,141,0.4); 
     	z-index: 2;
     }
     &:after{
@@ -1218,6 +1249,7 @@ button.mfp-arrow{
 }
 .popup-product-chars__icon{
 	width: 40px;
+	min-width: 40px;
 	height: 40px;
 	display: flex;
 	align-items: center;
