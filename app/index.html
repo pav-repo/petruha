@@ -36,7 +36,7 @@
 					</div>
 				</div>
 			</header>
-			<div class="history-info">
+			<div class="history-info history-info--desktop">
 				<div class="history-title">
 					История<br> рецептуры
 				</div>
@@ -104,10 +104,14 @@
 										</span>
 									</div>
 									<div class="top-slider__buttons">
-										<a href="#" class="wantTo">Хочу приготовить</a>
-										<a href="#" class="changeDish js-changeDish">
-											Другое блюдо
-										</a>
+										<div class="buttons-item">
+											<a href="#" class="wantTo">Хочу приготовить</a>
+										</div>
+										<div class="buttons-item">
+											<a href="#" class="changeDish js-changeDish">
+												Другое блюдо
+											</a>
+										</div>
 									</div>
 								</div>
 								<div class="top-slider__labels">
@@ -252,6 +256,16 @@
 				<div class="screen-item screen-item--history" data-anchor="history">
 					<div class="container-fluid">
 						<div class="history-wrap">
+							<div class="history-info history-info--mobile">
+								<div class="history-title">
+									История<br> рецептуры
+								</div>
+								<div class="history-txt">
+									<p>
+										“ПЕТРУХА МАСТЕР” - это гармоничное сочетание ингредиентов, баланс вкусов и сочности, отменные приправы и ароматные специи! Создаем продукты, исследуя культуру их потребления в повседневной жизни. С нами вы Мастер на своей кухне, а блюда всегда получаются изысканными и потрясающе вкусными!
+									</p>
+								</div>
+							</div>
 							<div class="history-list">
 								<div class="chef"></div>
 								<div class="kitchen"></div>
@@ -315,7 +329,6 @@
 									</div>
 								</div>
 							</div>
-							
 						</div>
 					</div>
 				</div> 
@@ -713,125 +726,127 @@
 					</div>
 				</div>
 				<div class="screen-item screen-item--raffle" data-anchor="raffle">
-					<div class="raffle-slider-wrapper">
-						<div class="container-fluid">
-							<div class="raffle-slider__pager">
-								<ul>
-									<li class="slide-0">
-										<a href="#" class="active">
-											<div class="raffle-slider__num">24-26</div>
-											<div class="raffle-slider__date">мая 2019</div>
-										</a>
-									</li>
-<!-- 									<li class="slide-1">
-										<a href="#">
-											<div class="raffle-slider__num">14</div>
-											<div class="raffle-slider__date">апреля 2019</div>
-										</a>
-									</li>
-									<li class="slide-2">
-										<a href="#">
-											<div class="raffle-slider__num">3</div>
-											<div class="raffle-slider__date">июля 2019</div>
-										</a>
-									</li>
-									<li class="slide-3">
-										<a href="#">
-											<div class="raffle-slider__num">29</div>
-											<div class="raffle-slider__date">ноября 2019</div>
-										</a>
-									</li> -->
-								</ul>
-							</div>
-							<div class="raffle-slider">
-								<div class="raffle-slider__item">
-									<div class="raffle-slider__image">
-										<a href="#" class="raffle-slider__img" style="background-image: url(img/content/raffle1.jpg)"></a>
-									</div>
-									<div class="raffle-slider__info">
-										<a href="/blog.html" class="raffle-slider__title">
-											Brest Bike Festival International
-										</a>
-										<div class="raffle-slider__txt">
-											В брендированной локации “ПЕТРУХА МАСТЕР” у посетителей фестиваля будет возможность попробовать себя в роли шеф-повара, мастерски приготовить мясо птицы барбекю и аппетитные шашлыки
-										</div>
-									</div>
+					<div class="raffle-container">
+						<div class="raffle-slider-wrapper">
+							<div class="container-fluid">
+								<div class="raffle-slider__pager">
+									<ul>
+										<li class="slide-0">
+											<a href="#" class="active">
+												<div class="raffle-slider__num">24-26</div>
+												<div class="raffle-slider__date">мая 2019</div>
+											</a>
+										</li>
+										<!--<li class="slide-1">
+											<a href="#">
+												<div class="raffle-slider__num">14</div>
+												<div class="raffle-slider__date">апреля 2019</div>
+											</a>
+										</li>
+										<li class="slide-2">
+											<a href="#">
+												<div class="raffle-slider__num">3</div>
+												<div class="raffle-slider__date">июля 2019</div>
+											</a>
+										</li>
+										<li class="slide-3">
+											<a href="#">
+												<div class="raffle-slider__num">29</div>
+												<div class="raffle-slider__date">ноября 2019</div>
+											</a>
+										</li> -->
+									</ul>
 								</div>
-<!-- 								<div class="raffle-slider__item">
-									<div class="raffle-slider__image">
-										<a href="#" class="raffle-slider__img" style="background-image: url(img/content/raffle1.jpg)"></a>
-									</div>
-									<div class="raffle-slider__info">
-										<a href="#" class="raffle-slider__title">
-											Test test test
-										</a>
-										<div class="raffle-slider__txt">
-											«Петруха» дарит возможность позаботиться о любимых и близких. Отправьте им настоящую милую открытку с поздравлениями прямо с промо-стойки рядом с фуд-траком.
+								<div class="raffle-slider">
+									<div class="raffle-slider__item">
+										<div class="raffle-slider__image">
+											<a href="#" class="raffle-slider__img" style="background-image: url(img/content/raffle1.jpg)"></a>
+										</div>
+										<div class="raffle-slider__info">
+											<a href="/blog.html" class="raffle-slider__title">
+												Brest Bike Festival International
+											</a>
+											<div class="raffle-slider__txt">
+												В брендированной локации “ПЕТРУХА МАСТЕР” у посетителей фестиваля будет возможность попробовать себя в роли шеф-повара, мастерски приготовить мясо птицы барбекю и аппетитные шашлыки
+											</div>
 										</div>
 									</div>
+									<!--<div class="raffle-slider__item">
+										<div class="raffle-slider__image">
+											<a href="#" class="raffle-slider__img" style="background-image: url(img/content/raffle1.jpg)"></a>
+										</div>
+										<div class="raffle-slider__info">
+											<a href="#" class="raffle-slider__title">
+												Test test test
+											</a>
+											<div class="raffle-slider__txt">
+												«Петруха» дарит возможность позаботиться о любимых и близких. Отправьте им настоящую милую открытку с поздравлениями прямо с промо-стойки рядом с фуд-траком.
+											</div>
+										</div>
+									</div>
+									<div class="raffle-slider__item">
+										<div class="raffle-slider__image">
+											<a href="#" class="raffle-slider__img" style="background-image: url(img/content/raffle1.jpg)"></a>
+										</div>
+										<div class="raffle-slider__info">
+											<a href="#" class="raffle-slider__title">
+												Test2 test2 test2
+											</a>
+											<div class="raffle-slider__txt">
+												«Петруха» дарит возможность позаботиться о любимых и близких. Отправьте им настоящую милую открытку с поздравлениями прямо с промо-стойки рядом с фуд-траком.
+											</div>
+										</div>
+									</div>
+									<div class="raffle-slider__item">
+										<div class="raffle-slider__image">
+											<a href="#" class="raffle-slider__img" style="background-image: url(img/content/raffle1.jpg)"></a>
+										</div>
+										<div class="raffle-slider__info">
+											<a href="#" class="raffle-slider__title">
+												Test3 test3 test3
+											</a>
+											<div class="raffle-slider__txt">
+												«Петруха» дарит возможность позаботиться о любимых и близких. Отправьте им настоящую милую открытку с поздравлениями прямо с промо-стойки рядом с фуд-траком.
+											</div>
+										</div>
+									</div> -->
 								</div>
-								<div class="raffle-slider__item">
-									<div class="raffle-slider__image">
-										<a href="#" class="raffle-slider__img" style="background-image: url(img/content/raffle1.jpg)"></a>
-									</div>
-									<div class="raffle-slider__info">
-										<a href="#" class="raffle-slider__title">
-											Test2 test2 test2
-										</a>
-										<div class="raffle-slider__txt">
-											«Петруха» дарит возможность позаботиться о любимых и близких. Отправьте им настоящую милую открытку с поздравлениями прямо с промо-стойки рядом с фуд-траком.
-										</div>
-									</div>
-								</div>
-								<div class="raffle-slider__item">
-									<div class="raffle-slider__image">
-										<a href="#" class="raffle-slider__img" style="background-image: url(img/content/raffle1.jpg)"></a>
-									</div>
-									<div class="raffle-slider__info">
-										<a href="#" class="raffle-slider__title">
-											Test3 test3 test3
-										</a>
-										<div class="raffle-slider__txt">
-											«Петруха» дарит возможность позаботиться о любимых и близких. Отправьте им настоящую милую открытку с поздравлениями прямо с промо-стойки рядом с фуд-траком.
-										</div>
-									</div>
-								</div> -->
 							</div>
 						</div>
+						<footer class="page-footer">
+							<div class="container-fluid">
+								<div class="page-footer__wrapper">
+									<div class="socials">
+										<a href="https://web.facebook.com/www.petruha.by/?ref=bookmarks" class="socials__item fb" target="_blank"></a>
+										<a href="https://web.facebook.com/petruha.russia/" class="socials__item fb" target="_blank"></a>
+										<a href="https://vk.com/petruha_by" class="socials__item vk" target="_blank"></a>
+										<a href="https://vk.com/petruha_rus" class="socials__item vk" target="_blank"></a>
+										<a href="https://www.instagram.com/petruha.by/" class="socials__item inst" target="_blank"></a>
+										<a href="https://www.instagram.com/petruha.ru/" class="socials__item inst" target="_blank"></a>
+										<a href="https://ok.ru/petruhaby" class="socials__item ok" target="_blank"></a>
+										<!-- <a href="#" class="socials__item youtube" target="_blank"></a> -->
+									</div>
+									<div class="page-footer__bottom">
+										<div class="page-footer__info">
+											<div class="copiright">
+												&copy; 2004–2019 ТМ «Петруха»
+											</div>
+											<div class="develop">
+												Дизайн и разработка <a href="https://nineseven.by/" class="develop__logo" target="_blank"></a>
+											</div>
+										</div>
+										<div class="page-footer__contacts">
+											<a href="mailto:feedback@servolux.com" class="page-footer__mail">feedback@servolux.com</a>
+											<a href="tel:+375297473700" class="page-footer__phone">
+												<span>+375 29 747 37 00</span>
+											</a>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</footer>
 					</div>
-					<footer class="page-footer">
-						<div class="container-fluid">
-							<div class="page-footer__wrapper">
-								<div class="socials">
-									<a href="https://web.facebook.com/www.petruha.by/?ref=bookmarks" class="socials__item fb" target="_blank"></a>
-									<a href="https://web.facebook.com/petruha.russia/" class="socials__item fb" target="_blank"></a>
-									<a href="https://vk.com/petruha_by" class="socials__item vk" target="_blank"></a>
-									<a href="https://vk.com/petruha_rus" class="socials__item vk" target="_blank"></a>
-									<a href="https://www.instagram.com/petruha.by/" class="socials__item inst" target="_blank"></a>
-									<a href="https://www.instagram.com/petruha.ru/" class="socials__item inst" target="_blank"></a>
-									<a href="https://ok.ru/petruhaby" class="socials__item ok" target="_blank"></a>
-									<!-- <a href="#" class="socials__item youtube" target="_blank"></a> -->
-								</div>
-								<div class="page-footer__bottom">
-									<div class="page-footer__info">
-										<div class="copiright">
-											&copy; 2004–2019 ТМ «Петруха»
-										</div>
-										<div class="develop">
-											Дизайн и разработка <a href="https://nineseven.by/" class="develop__logo" target="_blank"></a>
-										</div>
-									</div>
-									<div class="page-footer__contacts">
-										<a href="mailto:feedback@servolux.com" class="page-footer__mail">feedback@servolux.com</a>
-										<a href="tel:+375297473700" class="page-footer__phone">
-											<span>+375 29 747 37 00</span>
-										</a>
-										
-									</div>
-								</div>
-							</div>
-						</div>
-					</footer>
 				</div>
 			</div>
 			<div class="page-footer__link__wrapper">
@@ -839,1404 +854,1430 @@
 			</div>
 		</div>
 		<div id="product1" class="popup mfp-with-anim mfp-hide">
-			<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
-				<div class="popup__img__inner">
-					<img src="img/content/product-popup1.png" alt="">
+			<div class="popup-wrapper">
+				<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
+					<div class="popup__img__inner">
+						<img src="img/content/product-popup1.png" alt="">
+					</div>
 				</div>
-			</div>
-			<div class="popup__info">
-				<div class="popup__title">
-					Маринад «Прованс»
-				</div>
-				<div class="catalog__labels">
-					<div class="catalog__label">Для всей семьи</div>
-					<div class="catalog__label">Выезд на природу</div>
-					<div class="catalog__label">Романтический ужин</div>
-					<div class="catalog__label">Вечеринка дома</div>
-				</div>
-				<div class="popup-product-chars">
-					<div class="popup-product-chars__item">
+				<div class="popup__info">
+					<div class="popup__title">
+						Маринад «Прованс»
+					</div>
+					<div class="catalog__labels">
+						<div class="catalog__label">Для всей семьи</div>
+						<div class="catalog__label">Выезд на природу</div>
+						<div class="catalog__label">Романтический ужин</div>
+						<div class="catalog__label">Вечеринка дома</div>
+					</div>
+					<div class="popup-product-chars">
+						<div class="popup-product-chars__item">
 
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/ohlazhdenie_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							Охлажденный продукт
-						</div>
-					</div>
-					<div class="popup-product-chars__item">
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/time_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							14 суток
-							<span>Срок годности, от 0 до +4°С</span>
-						</div>
-					</div>
-				</div>
-				<div class="product__chars">
-					<div class="char-item">
-						<div class="char__count">230</div>
-						Ккал
-					</div>
-					<div class="char-item">
-						<div class="char__count">18</div>
-						Жиры
-					</div>
-					<div class="char-item">
-						<div class="char__count">16</div>
-						Белки
-					</div>
-				</div>
-				<div class="popup-product-descr">
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/tovar_icon.svg" alt="">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/ohlazhdenie_icon.svg" alt="">
 							</div>
-							Индивидуальная упаковка
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">Вакуум</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								260×177×60 <span>мм</span>
+							<div class="popup-product-chars__txt">
+								Охлажденный продукт
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								1000 <span>г</span>
+						<div class="popup-product-chars__item">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/time_icon.svg" alt="">
+							</div>
+							<div class="popup-product-chars__txt">
+								14 суток
+								<span>Срок годности, от 0 до +4°С</span>
 							</div>
 						</div>
 					</div>
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/transport_icon.svg" alt="">
-							</div>
-							Транспортная упаковка
+					<div class="product__chars">
+						<div class="char-item">
+							<div class="char__count">230</div>
+							Ккал
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">
-								Г/Я малый
+						<div class="char-item">
+							<div class="char__count">18</div>
+							Жиры
+						</div>
+						<div class="char-item">
+							<div class="char__count">16</div>
+							Белки
+						</div>
+					</div>
+					<div class="popup-product-descr">
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/tovar_icon.svg" alt="">
+								</div>
+								Индивидуальная упаковка
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">Вакуум</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									260×177×60 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									1000 <span>г</span>
+								</div>
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								570×370×75 <span>мм</span>
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/transport_icon.svg" alt="">
+								</div>
+								Транспортная упаковка
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								4,4 <span>кг</span>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">
+									Г/Я малый
+								</div>
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Количество вложений</div>
-							<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									570×370×75 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									4,4 <span>кг</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Количество вложений</div>
+								<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="product2" class="popup mfp-with-anim mfp-hide">
-			<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
-				<div class="popup__img__inner">
-					<img src="img/content/product-popup1.png" alt="">
+			<div class="popup-wrapper">
+				<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
+					<div class="popup__img__inner">
+						<img src="img/content/product-popup1.png" alt="">
+					</div>
 				</div>
-			</div>
-			<div class="popup__info">
-				<div class="popup__title">
-					Маринад <br>"Итальянское лето"
-				</div>
-				<div class="catalog__labels">
-					<div class="catalog__label">Для всей семьи</div>
-					<div class="catalog__label">Выезд на природу</div>
-					<div class="catalog__label">Романтический ужин</div>
-					<div class="catalog__label">Вечеринка дома</div>
-				</div>
-				<div class="popup-product-chars">
-					<div class="popup-product-chars__item">
+				<div class="popup__info">
+					<div class="popup__title">
+						Маринад <br>"Итальянское лето"
+					</div>
+					<div class="catalog__labels">
+						<div class="catalog__label">Для всей семьи</div>
+						<div class="catalog__label">Выезд на природу</div>
+						<div class="catalog__label">Романтический ужин</div>
+						<div class="catalog__label">Вечеринка дома</div>
+					</div>
+					<div class="popup-product-chars">
+						<div class="popup-product-chars__item">
 
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/ohlazhdenie_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							Охлажденный продукт
-						</div>
-					</div>
-					<div class="popup-product-chars__item">
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/time_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							14 суток
-							<span>Срок годности, от 0 до +4°С</span>
-						</div>
-					</div>
-				</div>
-				<div class="product__chars">
-					<div class="char-item">
-						<div class="char__count">220</div>
-						Ккал
-					</div>
-					<div class="char-item">
-						<div class="char__count">17</div>
-						Жиры
-					</div>
-					<div class="char-item">
-						<div class="char__count">16</div>
-						Белки
-					</div>
-				</div>
-				<div class="popup-product-descr">
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/tovar_icon.svg" alt="">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/ohlazhdenie_icon.svg" alt="">
 							</div>
-							Индивидуальная упаковка
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">Вакуум</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								260×177×60 <span>мм</span>
+							<div class="popup-product-chars__txt">
+								Охлажденный продукт
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								1000 <span>г</span>
+						<div class="popup-product-chars__item">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/time_icon.svg" alt="">
+							</div>
+							<div class="popup-product-chars__txt">
+								14 суток
+								<span>Срок годности, от 0 до +4°С</span>
 							</div>
 						</div>
 					</div>
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/transport_icon.svg" alt="">
-							</div>
-							Транспортная упаковка
+					<div class="product__chars">
+						<div class="char-item">
+							<div class="char__count">220</div>
+							Ккал
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">
-								Г/Я малый
+						<div class="char-item">
+							<div class="char__count">17</div>
+							Жиры
+						</div>
+						<div class="char-item">
+							<div class="char__count">16</div>
+							Белки
+						</div>
+					</div>
+					<div class="popup-product-descr">
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/tovar_icon.svg" alt="">
+								</div>
+								Индивидуальная упаковка
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">Вакуум</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									260×177×60 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									1000 <span>г</span>
+								</div>
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								570×370×75 <span>мм</span>
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/transport_icon.svg" alt="">
+								</div>
+								Транспортная упаковка
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								4,4 <span>кг</span>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">
+									Г/Я малый
+								</div>
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Количество вложений</div>
-							<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									570×370×75 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									4,4 <span>кг</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Количество вложений</div>
+								<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="product3" class="popup mfp-with-anim mfp-hide">
-			<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
-				<div class="popup__img__inner">
-					<img src="img/content/product-popup1.png" alt="">
+			<div class="popup-wrapper">
+				<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
+					<div class="popup__img__inner">
+						<img src="img/content/product-popup1.png" alt="">
+					</div>
 				</div>
-			</div>
-			<div class="popup__info">
-				<div class="popup__title">
-					Маринад «Терияки»
-				</div>
-				<div class="catalog__labels">
-					<div class="catalog__label">Для всей семьи</div>
-					<div class="catalog__label">Выезд на природу</div>
-					<div class="catalog__label">Романтический ужин</div>
-					<div class="catalog__label">Вечеринка дома</div>
-				</div>
-				<div class="popup-product-chars">
-					<div class="popup-product-chars__item">
+				<div class="popup__info">
+					<div class="popup__title">
+						Маринад «Терияки»
+					</div>
+					<div class="catalog__labels">
+						<div class="catalog__label">Для всей семьи</div>
+						<div class="catalog__label">Выезд на природу</div>
+						<div class="catalog__label">Романтический ужин</div>
+						<div class="catalog__label">Вечеринка дома</div>
+					</div>
+					<div class="popup-product-chars">
+						<div class="popup-product-chars__item">
 
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/ohlazhdenie_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							Охлажденный продукт
-						</div>
-					</div>
-					<div class="popup-product-chars__item">
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/time_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							14 суток
-							<span>Срок годности, от 0 до +4°С</span>
-						</div>
-					</div>
-				</div>
-				<div class="product__chars">
-					<div class="char-item">
-						<div class="char__count">210</div>
-						Ккал
-					</div>
-					<div class="char-item">
-						<div class="char__count">17</div>
-						Жиры
-					</div>
-					<div class="char-item">
-						<div class="char__count">15</div>
-						Белки
-					</div>
-				</div>
-				<div class="popup-product-descr">
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/tovar_icon.svg" alt="">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/ohlazhdenie_icon.svg" alt="">
 							</div>
-							Индивидуальная упаковка
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">Вакуум</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								260×177×60 <span>мм</span>
+							<div class="popup-product-chars__txt">
+								Охлажденный продукт
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								1000 <span>г</span>
+						<div class="popup-product-chars__item">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/time_icon.svg" alt="">
+							</div>
+							<div class="popup-product-chars__txt">
+								14 суток
+								<span>Срок годности, от 0 до +4°С</span>
 							</div>
 						</div>
 					</div>
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/transport_icon.svg" alt="">
-							</div>
-							Транспортная упаковка
+					<div class="product__chars">
+						<div class="char-item">
+							<div class="char__count">210</div>
+							Ккал
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">
-								Г/Я малый
+						<div class="char-item">
+							<div class="char__count">17</div>
+							Жиры
+						</div>
+						<div class="char-item">
+							<div class="char__count">15</div>
+							Белки
+						</div>
+					</div>
+					<div class="popup-product-descr">
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/tovar_icon.svg" alt="">
+								</div>
+								Индивидуальная упаковка
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">Вакуум</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									260×177×60 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									1000 <span>г</span>
+								</div>
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								570×370×75 <span>мм</span>
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/transport_icon.svg" alt="">
+								</div>
+								Транспортная упаковка
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								4,4 <span>кг</span>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">
+									Г/Я малый
+								</div>
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Количество вложений</div>
-							<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									570×370×75 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									4,4 <span>кг</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Количество вложений</div>
+								<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="product4" class="popup mfp-with-anim mfp-hide">
-			<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
-				<div class="popup__img__inner">
-					<img src="img/content/product-popup1.png" alt="">
+			<div class="popup-wrapper">
+				<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
+					<div class="popup__img__inner">
+						<img src="img/content/product-popup1.png" alt="">
+					</div>
 				</div>
-			</div>
-			<div class="popup__info">
-				<div class="popup__title">
-					Колбаски "Оригинальные"
-				</div>
-				<div class="catalog__labels">
-					<div class="catalog__label">Для всей семьи</div>
-					<div class="catalog__label">Выезд на природу</div>
-					<div class="catalog__label">Романтический ужин</div>
-					<div class="catalog__label">Вечеринка дома</div>
-				</div>
-				<div class="popup-product-chars">
-					<div class="popup-product-chars__item">
+				<div class="popup__info">
+					<div class="popup__title">
+						Колбаски "Оригинальные"
+					</div>
+					<div class="catalog__labels">
+						<div class="catalog__label">Для всей семьи</div>
+						<div class="catalog__label">Выезд на природу</div>
+						<div class="catalog__label">Романтический ужин</div>
+						<div class="catalog__label">Вечеринка дома</div>
+					</div>
+					<div class="popup-product-chars">
+						<div class="popup-product-chars__item">
 
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/ohlazhdenie_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							Охлажденный продукт
-						</div>
-					</div>
-					<div class="popup-product-chars__item">
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/time_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							9 суток
-							<span>Срок годности, от 0 до +4°С</span>
-						</div>
-					</div>
-				</div>
-				<div class="product__chars">
-					<div class="char-item">
-						<div class="char__count">230</div>
-						Ккал
-					</div>
-					<div class="char-item">
-						<div class="char__count">18</div>
-						Жиры
-					</div>
-					<div class="char-item">
-						<div class="char__count">16</div>
-						Белки
-					</div>
-				</div>
-				<div class="popup-product-descr">
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/tovar_icon.svg" alt="">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/ohlazhdenie_icon.svg" alt="">
 							</div>
-							Индивидуальная упаковка
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">Трей</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								190×144×55 <span>мм</span>
+							<div class="popup-product-chars__txt">
+								Охлажденный продукт
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								600 <span>г</span>
+						<div class="popup-product-chars__item">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/time_icon.svg" alt="">
+							</div>
+							<div class="popup-product-chars__txt">
+								9 суток
+								<span>Срок годности, от 0 до +4°С</span>
 							</div>
 						</div>
 					</div>
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/transport_icon.svg" alt="">
-							</div>
-							Транспортная упаковка
+					<div class="product__chars">
+						<div class="char-item">
+							<div class="char__count">230</div>
+							Ккал
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">
-								Г/Я мини
+						<div class="char-item">
+							<div class="char__count">18</div>
+							Жиры
+						</div>
+						<div class="char-item">
+							<div class="char__count">16</div>
+							Белки
+						</div>
+					</div>
+					<div class="popup-product-descr">
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/tovar_icon.svg" alt="">
+								</div>
+								Индивидуальная упаковка
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">Трей</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									190×144×55 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									600 <span>г</span>
+								</div>
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								570×370×75 <span>мм</span>
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/transport_icon.svg" alt="">
+								</div>
+								Транспортная упаковка
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								2,4 <span>кг</span>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">
+									Г/Я мини
+								</div>
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Количество вложений</div>
-							<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									570×370×75 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									2,4 <span>кг</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Количество вложений</div>
+								<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="product5" class="popup mfp-with-anim mfp-hide">
-			<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
-				<div class="popup__img__inner">
-					<img src="img/content/product-popup1.png" alt="">
+			<div class="popup-wrapper">
+				<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
+					<div class="popup__img__inner">
+						<img src="img/content/product-popup1.png" alt="">
+					</div>
 				</div>
-			</div>
-			<div class="popup__info">
-				<div class="popup__title">
-					Колбаски "По-балкански"
-				</div>
-				<div class="catalog__labels">
-					<div class="catalog__label">Для всей семьи</div>
-					<div class="catalog__label">Выезд на природу</div>
-					<div class="catalog__label">Романтический ужин</div>
-					<div class="catalog__label">Вечеринка дома</div>
-				</div>
-				<div class="popup-product-chars">
-					<div class="popup-product-chars__item">
+				<div class="popup__info">
+					<div class="popup__title">
+						Колбаски "По-балкански"
+					</div>
+					<div class="catalog__labels">
+						<div class="catalog__label">Для всей семьи</div>
+						<div class="catalog__label">Выезд на природу</div>
+						<div class="catalog__label">Романтический ужин</div>
+						<div class="catalog__label">Вечеринка дома</div>
+					</div>
+					<div class="popup-product-chars">
+						<div class="popup-product-chars__item">
 
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/ohlazhdenie_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							Охлажденный продукт
-						</div>
-					</div>
-					<div class="popup-product-chars__item">
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/time_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							9 суток
-							<span>Срок годности, от 0 до +4°С</span>
-						</div>
-					</div>
-				</div>
-				<div class="product__chars">
-					<div class="char-item">
-						<div class="char__count">230</div>
-						Ккал
-					</div>
-					<div class="char-item">
-						<div class="char__count">18</div>
-						Жиры
-					</div>
-					<div class="char-item">
-						<div class="char__count">16</div>
-						Белки
-					</div>
-				</div>
-				<div class="popup-product-descr">
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/tovar_icon.svg" alt="">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/ohlazhdenie_icon.svg" alt="">
 							</div>
-							Индивидуальная упаковка
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">Трей</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								190×144×55 <span>мм</span>
+							<div class="popup-product-chars__txt">
+								Охлажденный продукт
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								600 <span>г</span>
+						<div class="popup-product-chars__item">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/time_icon.svg" alt="">
+							</div>
+							<div class="popup-product-chars__txt">
+								9 суток
+								<span>Срок годности, от 0 до +4°С</span>
 							</div>
 						</div>
 					</div>
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/transport_icon.svg" alt="">
-							</div>
-							Транспортная упаковка
+					<div class="product__chars">
+						<div class="char-item">
+							<div class="char__count">230</div>
+							Ккал
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">
-								Г/Я мини
+						<div class="char-item">
+							<div class="char__count">18</div>
+							Жиры
+						</div>
+						<div class="char-item">
+							<div class="char__count">16</div>
+							Белки
+						</div>
+					</div>
+					<div class="popup-product-descr">
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/tovar_icon.svg" alt="">
+								</div>
+								Индивидуальная упаковка
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">Трей</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									190×144×55 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									600 <span>г</span>
+								</div>
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								570×370×75 <span>мм</span>
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/transport_icon.svg" alt="">
+								</div>
+								Транспортная упаковка
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								2,4 <span>кг</span>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">
+									Г/Я мини
+								</div>
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Количество вложений</div>
-							<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									570×370×75 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									2,4 <span>кг</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Количество вложений</div>
+								<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="product6" class="popup mfp-with-anim mfp-hide">
-			<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
-				<div class="popup__img__inner">
-					<img src="img/content/product-popup1.png" alt="">
+			<div class="popup-wrapper">
+				<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
+					<div class="popup__img__inner">
+						<img src="img/content/product-popup1.png" alt="">
+					</div>
 				</div>
-			</div>
-			<div class="popup__info">
-				<div class="popup__title">
-					Колбаски "По-итальянски"
-				</div>
-				<div class="catalog__labels">
-					<div class="catalog__label">Для всей семьи</div>
-					<div class="catalog__label">Выезд на природу</div>
-					<div class="catalog__label">Романтический ужин</div>
-					<div class="catalog__label">Вечеринка дома</div>
-				</div>
-				<div class="popup-product-chars">
-					<div class="popup-product-chars__item">
+				<div class="popup__info">
+					<div class="popup__title">
+						Колбаски "По-итальянски"
+					</div>
+					<div class="catalog__labels">
+						<div class="catalog__label">Для всей семьи</div>
+						<div class="catalog__label">Выезд на природу</div>
+						<div class="catalog__label">Романтический ужин</div>
+						<div class="catalog__label">Вечеринка дома</div>
+					</div>
+					<div class="popup-product-chars">
+						<div class="popup-product-chars__item">
 
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/ohlazhdenie_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							Охлажденный продукт
-						</div>
-					</div>
-					<div class="popup-product-chars__item">
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/time_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							9 суток
-							<span>Срок годности, от 0 до +4°С</span>
-						</div>
-					</div>
-				</div>
-				<div class="product__chars">
-					<div class="char-item">
-						<div class="char__count">230</div>
-						Ккал
-					</div>
-					<div class="char-item">
-						<div class="char__count">18</div>
-						Жиры
-					</div>
-					<div class="char-item">
-						<div class="char__count">16</div>
-						Белки
-					</div>
-				</div>
-				<div class="popup-product-descr">
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/tovar_icon.svg" alt="">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/ohlazhdenie_icon.svg" alt="">
 							</div>
-							Индивидуальная упаковка
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">Трей</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								190×144×55 <span>мм</span>
+							<div class="popup-product-chars__txt">
+								Охлажденный продукт
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								600 <span>г</span>
+						<div class="popup-product-chars__item">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/time_icon.svg" alt="">
+							</div>
+							<div class="popup-product-chars__txt">
+								9 суток
+								<span>Срок годности, от 0 до +4°С</span>
 							</div>
 						</div>
 					</div>
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/transport_icon.svg" alt="">
-							</div>
-							Транспортная упаковка
+					<div class="product__chars">
+						<div class="char-item">
+							<div class="char__count">230</div>
+							Ккал
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">
-								Г/Я мини
+						<div class="char-item">
+							<div class="char__count">18</div>
+							Жиры
+						</div>
+						<div class="char-item">
+							<div class="char__count">16</div>
+							Белки
+						</div>
+					</div>
+					<div class="popup-product-descr">
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/tovar_icon.svg" alt="">
+								</div>
+								Индивидуальная упаковка
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">Трей</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									190×144×55 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									600 <span>г</span>
+								</div>
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								570×370×75 <span>мм</span>
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/transport_icon.svg" alt="">
+								</div>
+								Транспортная упаковка
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								2,4 <span>кг</span>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">
+									Г/Я мини
+								</div>
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Количество вложений</div>
-							<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									570×370×75 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									2,4 <span>кг</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Количество вложений</div>
+								<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="product7" class="popup mfp-with-anim mfp-hide">
-			<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
-				<div class="popup__img__inner">
-					<img src="img/content/product-popup1.png" alt="">
+			<div class="popup-wrapper">
+				<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
+					<div class="popup__img__inner">
+						<img src="img/content/product-popup1.png" alt="">
+					</div>
 				</div>
-			</div>
-			<div class="popup__info">
-				<div class="popup__title">
-					Маринад бедро горчица
-				</div>
-				<div class="catalog__labels">
-					<div class="catalog__label">Для всей семьи</div>
-					<div class="catalog__label">Выезд на природу</div>
-					<div class="catalog__label">Романтический ужин</div>
-					<div class="catalog__label">Вечеринка дома</div>
-				</div>
-				<div class="popup-product-chars">
-					<div class="popup-product-chars__item">
+				<div class="popup__info">
+					<div class="popup__title">
+						Маринад бедро горчица
+					</div>
+					<div class="catalog__labels">
+						<div class="catalog__label">Для всей семьи</div>
+						<div class="catalog__label">Выезд на природу</div>
+						<div class="catalog__label">Романтический ужин</div>
+						<div class="catalog__label">Вечеринка дома</div>
+					</div>
+					<div class="popup-product-chars">
+						<div class="popup-product-chars__item">
 
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/ohlazhdenie_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							Охлажденный продукт
-						</div>
-					</div>
-					<div class="popup-product-chars__item">
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/time_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							14 суток
-							<span>Срок годности, от 0 до +4°С</span>
-						</div>
-					</div>
-				</div>
-				<div class="product__chars">
-					<div class="char-item">
-						<div class="char__count">220</div>
-						Ккал
-					</div>
-					<div class="char-item">
-						<div class="char__count">17</div>
-						Жиры
-					</div>
-					<div class="char-item">
-						<div class="char__count">15</div>
-						Белки
-					</div>
-				</div>
-				<div class="popup-product-descr">
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/tovar_icon.svg" alt="">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/ohlazhdenie_icon.svg" alt="">
 							</div>
-							Индивидуальная упаковка
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">Вакуум</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								260×170×60 <span>мм</span>
+							<div class="popup-product-chars__txt">
+								Охлажденный продукт
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								1100 <span>г</span>
+						<div class="popup-product-chars__item">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/time_icon.svg" alt="">
+							</div>
+							<div class="popup-product-chars__txt">
+								14 суток
+								<span>Срок годности, от 0 до +4°С</span>
 							</div>
 						</div>
 					</div>
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/transport_icon.svg" alt="">
-							</div>
-							Транспортная упаковка
+					<div class="product__chars">
+						<div class="char-item">
+							<div class="char__count">220</div>
+							Ккал
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">
-								Г/Я малый
+						<div class="char-item">
+							<div class="char__count">17</div>
+							Жиры
+						</div>
+						<div class="char-item">
+							<div class="char__count">15</div>
+							Белки
+						</div>
+					</div>
+					<div class="popup-product-descr">
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/tovar_icon.svg" alt="">
+								</div>
+								Индивидуальная упаковка
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">Вакуум</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									260×170×60 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									1100 <span>г</span>
+								</div>
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								570×370×75 <span>мм</span>
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/transport_icon.svg" alt="">
+								</div>
+								Транспортная упаковка
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								4,4 <span>кг</span>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">
+									Г/Я малый
+								</div>
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Количество вложений</div>
-							<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									570×370×75 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									4,4 <span>кг</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Количество вложений</div>
+								<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="product8" class="popup mfp-with-anim mfp-hide">
-			<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
-				<div class="popup__img__inner">
-					<img src="img/content/product-popup1.png" alt="">
+			<div class="popup-wrapper">
+				<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
+					<div class="popup__img__inner">
+						<img src="img/content/product-popup1.png" alt="">
+					</div>
 				</div>
-			</div>
-			<div class="popup__info">
-				<div class="popup__title">
-					Маринад голень барбекю
-				</div>
-				<div class="catalog__labels">
-					<div class="catalog__label">Для всей семьи</div>
-					<div class="catalog__label">Выезд на природу</div>
-					<div class="catalog__label">Романтический ужин</div>
-					<div class="catalog__label">Вечеринка дома</div>
-				</div>
-				<div class="popup-product-chars">
-					<div class="popup-product-chars__item">
+				<div class="popup__info">
+					<div class="popup__title">
+						Маринад голень барбекю
+					</div>
+					<div class="catalog__labels">
+						<div class="catalog__label">Для всей семьи</div>
+						<div class="catalog__label">Выезд на природу</div>
+						<div class="catalog__label">Романтический ужин</div>
+						<div class="catalog__label">Вечеринка дома</div>
+					</div>
+					<div class="popup-product-chars">
+						<div class="popup-product-chars__item">
 
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/ohlazhdenie_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							Охлажденный продукт
-						</div>
-					</div>
-					<div class="popup-product-chars__item">
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/time_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							14 суток
-							<span>Срок годности, от 0 до +4°С</span>
-						</div>
-					</div>
-				</div>
-				<div class="product__chars">
-					<div class="char-item">
-						<div class="char__count">220</div>
-						Ккал
-					</div>
-					<div class="char-item">
-						<div class="char__count">17</div>
-						Жиры
-					</div>
-					<div class="char-item">
-						<div class="char__count">16</div>
-						Белки
-					</div>
-				</div>
-				<div class="popup-product-descr">
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/tovar_icon.svg" alt="">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/ohlazhdenie_icon.svg" alt="">
 							</div>
-							Индивидуальная упаковка
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">Вакуум</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								260×170×60 <span>мм</span>
+							<div class="popup-product-chars__txt">
+								Охлажденный продукт
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								1100 <span>г</span>
+						<div class="popup-product-chars__item">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/time_icon.svg" alt="">
+							</div>
+							<div class="popup-product-chars__txt">
+								14 суток
+								<span>Срок годности, от 0 до +4°С</span>
 							</div>
 						</div>
 					</div>
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/transport_icon.svg" alt="">
-							</div>
-							Транспортная упаковка
+					<div class="product__chars">
+						<div class="char-item">
+							<div class="char__count">220</div>
+							Ккал
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">
-								Г/Я малый
+						<div class="char-item">
+							<div class="char__count">17</div>
+							Жиры
+						</div>
+						<div class="char-item">
+							<div class="char__count">16</div>
+							Белки
+						</div>
+					</div>
+					<div class="popup-product-descr">
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/tovar_icon.svg" alt="">
+								</div>
+								Индивидуальная упаковка
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">Вакуум</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									260×170×60 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									1100 <span>г</span>
+								</div>
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								570×370×75 <span>мм</span>
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/transport_icon.svg" alt="">
+								</div>
+								Транспортная упаковка
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								4,4 <span>кг</span>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">
+									Г/Я малый
+								</div>
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Количество вложений</div>
-							<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									570×370×75 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									4,4 <span>кг</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Количество вложений</div>
+								<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="product9" class="popup mfp-with-anim mfp-hide">
-			<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
-				<div class="popup__img__inner">
-					<img src="img/content/product-popup1.png" alt="">
+			<div class="popup-wrapper">
+				<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
+					<div class="popup__img__inner">
+						<img src="img/content/product-popup1.png" alt="">
+					</div>
 				</div>
-			</div>
-			<div class="popup__info">
-				<div class="popup__title">
-					Маринад голень чеснок и зелень
-				</div>
-				<div class="catalog__labels">
-					<div class="catalog__label">Для всей семьи</div>
-					<div class="catalog__label">Выезд на природу</div>
-					<div class="catalog__label">Романтический ужин</div>
-					<div class="catalog__label">Вечеринка дома</div>
-				</div>
-				<div class="popup-product-chars">
-					<div class="popup-product-chars__item">
+				<div class="popup__info">
+					<div class="popup__title">
+						Маринад голень чеснок и зелень
+					</div>
+					<div class="catalog__labels">
+						<div class="catalog__label">Для всей семьи</div>
+						<div class="catalog__label">Выезд на природу</div>
+						<div class="catalog__label">Романтический ужин</div>
+						<div class="catalog__label">Вечеринка дома</div>
+					</div>
+					<div class="popup-product-chars">
+						<div class="popup-product-chars__item">
 
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/ohlazhdenie_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							Охлажденный продукт
-						</div>
-					</div>
-					<div class="popup-product-chars__item">
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/time_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							14 суток
-							<span>Срок годности, от 0 до +4°С</span>
-						</div>
-					</div>
-				</div>
-				<div class="product__chars">
-					<div class="char-item">
-						<div class="char__count">220</div>
-						Ккал
-					</div>
-					<div class="char-item">
-						<div class="char__count">17</div>
-						Жиры
-					</div>
-					<div class="char-item">
-						<div class="char__count">16</div>
-						Белки
-					</div>
-				</div>
-				<div class="popup-product-descr">
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/tovar_icon.svg" alt="">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/ohlazhdenie_icon.svg" alt="">
 							</div>
-							Индивидуальная упаковка
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">Вакуум</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								260×170×60 <span>мм</span>
+							<div class="popup-product-chars__txt">
+								Охлажденный продукт
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								1100 <span>г</span>
+						<div class="popup-product-chars__item">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/time_icon.svg" alt="">
+							</div>
+							<div class="popup-product-chars__txt">
+								14 суток
+								<span>Срок годности, от 0 до +4°С</span>
 							</div>
 						</div>
 					</div>
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/transport_icon.svg" alt="">
-							</div>
-							Транспортная упаковка
+					<div class="product__chars">
+						<div class="char-item">
+							<div class="char__count">220</div>
+							Ккал
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">
-								Г/Я малый
+						<div class="char-item">
+							<div class="char__count">17</div>
+							Жиры
+						</div>
+						<div class="char-item">
+							<div class="char__count">16</div>
+							Белки
+						</div>
+					</div>
+					<div class="popup-product-descr">
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/tovar_icon.svg" alt="">
+								</div>
+								Индивидуальная упаковка
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">Вакуум</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									260×170×60 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									1100 <span>г</span>
+								</div>
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								570×370×75 <span>мм</span>
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/transport_icon.svg" alt="">
+								</div>
+								Транспортная упаковка
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								4,4 <span>кг</span>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">
+									Г/Я малый
+								</div>
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Количество вложений</div>
-							<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									570×370×75 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									4,4 <span>кг</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Количество вложений</div>
+								<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="product10" class="popup mfp-with-anim mfp-hide">
-			<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
-				<div class="popup__img__inner">
-					<img src="img/content/product-popup1.png" alt="">
+			<div class="popup-wrapper">
+				<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
+					<div class="popup__img__inner">
+						<img src="img/content/product-popup1.png" alt="">
+					</div>
 				</div>
-			</div>
-			<div class="popup__info">
-				<div class="popup__title">
-					Маринад крыло томат острый
-				</div>
-				<div class="catalog__labels">
-					<div class="catalog__label">Для всей семьи</div>
-					<div class="catalog__label">Выезд на природу</div>
-					<div class="catalog__label">Романтический ужин</div>
-					<div class="catalog__label">Вечеринка дома</div>
-				</div>
-				<div class="popup-product-chars">
-					<div class="popup-product-chars__item">
+				<div class="popup__info">
+					<div class="popup__title">
+						Маринад крыло томат острый
+					</div>
+					<div class="catalog__labels">
+						<div class="catalog__label">Для всей семьи</div>
+						<div class="catalog__label">Выезд на природу</div>
+						<div class="catalog__label">Романтический ужин</div>
+						<div class="catalog__label">Вечеринка дома</div>
+					</div>
+					<div class="popup-product-chars">
+						<div class="popup-product-chars__item">
 
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/ohlazhdenie_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							Охлажденный продукт
-						</div>
-					</div>
-					<div class="popup-product-chars__item">
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/time_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							14 суток
-							<span>Срок годности, от 0 до +4°С</span>
-						</div>
-					</div>
-				</div>
-				<div class="product__chars">
-					<div class="char-item">
-						<div class="char__count">210</div>
-						Ккал
-					</div>
-					<div class="char-item">
-						<div class="char__count">17</div>
-						Жиры
-					</div>
-					<div class="char-item">
-						<div class="char__count">14</div>
-						Белки
-					</div>
-				</div>
-				<div class="popup-product-descr">
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/tovar_icon.svg" alt="">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/ohlazhdenie_icon.svg" alt="">
 							</div>
-							Индивидуальная упаковка
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">Вакуум</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								260×170×60 <span>мм</span>
+							<div class="popup-product-chars__txt">
+								Охлажденный продукт
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								1100 <span>г</span>
+						<div class="popup-product-chars__item">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/time_icon.svg" alt="">
+							</div>
+							<div class="popup-product-chars__txt">
+								14 суток
+								<span>Срок годности, от 0 до +4°С</span>
 							</div>
 						</div>
 					</div>
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/transport_icon.svg" alt="">
-							</div>
-							Транспортная упаковка
+					<div class="product__chars">
+						<div class="char-item">
+							<div class="char__count">210</div>
+							Ккал
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">
-								Г/Я малый
+						<div class="char-item">
+							<div class="char__count">17</div>
+							Жиры
+						</div>
+						<div class="char-item">
+							<div class="char__count">14</div>
+							Белки
+						</div>
+					</div>
+					<div class="popup-product-descr">
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/tovar_icon.svg" alt="">
+								</div>
+								Индивидуальная упаковка
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">Вакуум</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									260×170×60 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									1100 <span>г</span>
+								</div>
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								570×370×75 <span>мм</span>
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/transport_icon.svg" alt="">
+								</div>
+								Транспортная упаковка
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								4,4 <span>кг</span>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">
+									Г/Я малый
+								</div>
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Количество вложений</div>
-							<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									570×370×75 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									4,4 <span>кг</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Количество вложений</div>
+								<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="product11" class="popup mfp-with-anim mfp-hide">
-			<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
-				<div class="popup__img__inner">
-					<img src="img/content/product-popup1.png" alt="">
+			<div class="popup-wrapper">
+				<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
+					<div class="popup__img__inner">
+						<img src="img/content/product-popup1.png" alt="">
+					</div>
 				</div>
-			</div>
-			<div class="popup__info">
-				<div class="popup__title">
-					Маринад малое<br> филе чеснок и зелень
-				</div>
-				<div class="catalog__labels">
-					<div class="catalog__label">Для всей семьи</div>
-					<div class="catalog__label">Выезд на природу</div>
-					<div class="catalog__label">Романтический ужин</div>
-					<div class="catalog__label">Вечеринка дома</div>
-				</div>
-				<div class="popup-product-chars">
-					<div class="popup-product-chars__item">
+				<div class="popup__info">
+					<div class="popup__title">
+						Маринад малое<br> филе чеснок и зелень
+					</div>
+					<div class="catalog__labels">
+						<div class="catalog__label">Для всей семьи</div>
+						<div class="catalog__label">Выезд на природу</div>
+						<div class="catalog__label">Романтический ужин</div>
+						<div class="catalog__label">Вечеринка дома</div>
+					</div>
+					<div class="popup-product-chars">
+						<div class="popup-product-chars__item">
 
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/ohlazhdenie_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							Охлажденный продукт
-						</div>
-					</div>
-					<div class="popup-product-chars__item">
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/time_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							14 суток
-							<span>Срок годности, от 0 до +4°С</span>
-						</div>
-					</div>
-				</div>
-				<div class="product__chars">
-					<div class="char-item">
-						<div class="char__count">140</div>
-						Ккал
-					</div>
-					<div class="char-item">
-						<div class="char__count">8</div>
-						Жиры
-					</div>
-					<div class="char-item">
-						<div class="char__count">17</div>
-						Белки
-					</div>
-				</div>
-				<div class="popup-product-descr">
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/tovar_icon.svg" alt="">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/ohlazhdenie_icon.svg" alt="">
 							</div>
-							Индивидуальная упаковка
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">Вакуум</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								260×170×60 <span>мм</span>
+							<div class="popup-product-chars__txt">
+								Охлажденный продукт
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								1100 <span>г</span>
+						<div class="popup-product-chars__item">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/time_icon.svg" alt="">
+							</div>
+							<div class="popup-product-chars__txt">
+								14 суток
+								<span>Срок годности, от 0 до +4°С</span>
 							</div>
 						</div>
 					</div>
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/transport_icon.svg" alt="">
-							</div>
-							Транспортная упаковка
+					<div class="product__chars">
+						<div class="char-item">
+							<div class="char__count">140</div>
+							Ккал
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">
-								Г/Я малый
+						<div class="char-item">
+							<div class="char__count">8</div>
+							Жиры
+						</div>
+						<div class="char-item">
+							<div class="char__count">17</div>
+							Белки
+						</div>
+					</div>
+					<div class="popup-product-descr">
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/tovar_icon.svg" alt="">
+								</div>
+								Индивидуальная упаковка
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">Вакуум</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									260×170×60 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									1100 <span>г</span>
+								</div>
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								570×370×75 <span>мм</span>
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/transport_icon.svg" alt="">
+								</div>
+								Транспортная упаковка
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								4,4 <span>кг</span>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">
+									Г/Я малый
+								</div>
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Количество вложений</div>
-							<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									570×370×75 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									4,4 <span>кг</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Количество вложений</div>
+								<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="product12" class="popup mfp-with-anim mfp-hide">
-			<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
-				<div class="popup__img__inner">
-					<img src="img/content/product-popup1.png" alt="">
+			<div class="popup-wrapper">
+				<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
+					<div class="popup__img__inner">
+						<img src="img/content/product-popup1.png" alt="">
+					</div>
 				</div>
-			</div>
-			<div class="popup__info">
-				<div class="popup__title">
-					Маринад микс:<br> мякоть бедра,<br> голень барбекю
-				</div>
-				<div class="catalog__labels">
-					<div class="catalog__label">Для всей семьи</div>
-					<div class="catalog__label">Выезд на природу</div>
-					<div class="catalog__label">Романтический ужин</div>
-					<div class="catalog__label">Вечеринка дома</div>
-				</div>
-				<div class="popup-product-chars">
-					<div class="popup-product-chars__item">
+				<div class="popup__info">
+					<div class="popup__title">
+						Маринад микс:<br> мякоть бедра,<br> голень барбекю
+					</div>
+					<div class="catalog__labels">
+						<div class="catalog__label">Для всей семьи</div>
+						<div class="catalog__label">Выезд на природу</div>
+						<div class="catalog__label">Романтический ужин</div>
+						<div class="catalog__label">Вечеринка дома</div>
+					</div>
+					<div class="popup-product-chars">
+						<div class="popup-product-chars__item">
 
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/ohlazhdenie_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							Охлажденный продукт
-						</div>
-					</div>
-					<div class="popup-product-chars__item">
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/time_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							14 суток
-							<span>Срок годности, от 0 до +4°С</span>
-						</div>
-					</div>
-				</div>
-				<div class="product__chars">
-					<div class="char-item">
-						<div class="char__count">180</div>
-						Ккал
-					</div>
-					<div class="char-item">
-						<div class="char__count">13</div>
-						Жиры
-					</div>
-					<div class="char-item">
-						<div class="char__count">15</div>
-						Белки
-					</div>
-				</div>
-				<div class="popup-product-descr">
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/tovar_icon.svg" alt="">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/ohlazhdenie_icon.svg" alt="">
 							</div>
-							Индивидуальная упаковка
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">Вакуум</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								260×170×60 <span>мм</span>
+							<div class="popup-product-chars__txt">
+								Охлажденный продукт
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								1100 <span>г</span>
+						<div class="popup-product-chars__item">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/time_icon.svg" alt="">
+							</div>
+							<div class="popup-product-chars__txt">
+								14 суток
+								<span>Срок годности, от 0 до +4°С</span>
 							</div>
 						</div>
 					</div>
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/transport_icon.svg" alt="">
-							</div>
-							Транспортная упаковка
+					<div class="product__chars">
+						<div class="char-item">
+							<div class="char__count">180</div>
+							Ккал
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">
-								Г/Я малый
+						<div class="char-item">
+							<div class="char__count">13</div>
+							Жиры
+						</div>
+						<div class="char-item">
+							<div class="char__count">15</div>
+							Белки
+						</div>
+					</div>
+					<div class="popup-product-descr">
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/tovar_icon.svg" alt="">
+								</div>
+								Индивидуальная упаковка
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">Вакуум</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									260×170×60 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									1100 <span>г</span>
+								</div>
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								570×370×75 <span>мм</span>
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/transport_icon.svg" alt="">
+								</div>
+								Транспортная упаковка
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								4,4 <span>кг</span>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">
+									Г/Я малый
+								</div>
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Количество вложений</div>
-							<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									570×370×75 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									4,4 <span>кг</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Количество вложений</div>
+								<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="product13" class="popup mfp-with-anim mfp-hide">
-			<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
-				<div class="popup__img__inner">
-					<img src="img/content/product-popup1.png" alt="">
+			<div class="popup-wrapper">
+				<div class="popup__img" style="background-image: url(img/content/product-bg1.png)">
+					<div class="popup__img__inner">
+						<img src="img/content/product-popup1.png" alt="">
+					</div>
 				</div>
-			</div>
-			<div class="popup__info">
-				<div class="popup__title">
-					Маринад плечевая часть<br> крыла томат острый
-				</div>
-				<div class="catalog__labels">
-					<div class="catalog__label">Для всей семьи</div>
-					<div class="catalog__label">Выезд на природу</div>
-					<div class="catalog__label">Романтический ужин</div>
-					<div class="catalog__label">Вечеринка дома</div>
-				</div>
-				<div class="popup-product-chars">
-					<div class="popup-product-chars__item">
+				<div class="popup__info">
+					<div class="popup__title">
+						Маринад плечевая часть<br> крыла томат острый
+					</div>
+					<div class="catalog__labels">
+						<div class="catalog__label">Для всей семьи</div>
+						<div class="catalog__label">Выезд на природу</div>
+						<div class="catalog__label">Романтический ужин</div>
+						<div class="catalog__label">Вечеринка дома</div>
+					</div>
+					<div class="popup-product-chars">
+						<div class="popup-product-chars__item">
 
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/ohlazhdenie_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							Охлажденный продукт
-						</div>
-					</div>
-					<div class="popup-product-chars__item">
-						<div class="popup-product-chars__icon">
-							<img src="img/svg/time_icon.svg" alt="">
-						</div>
-						<div class="popup-product-chars__txt">
-							14 суток
-							<span>Срок годности, от 0 до +4°С</span>
-						</div>
-					</div>
-				</div>
-				<div class="product__chars">
-					<div class="char-item">
-						<div class="char__count">210</div>
-						Ккал
-					</div>
-					<div class="char-item">
-						<div class="char__count">18</div>
-						Жиры
-					</div>
-					<div class="char-item">
-						<div class="char__count">13</div>
-						Белки
-					</div>
-				</div>
-				<div class="popup-product-descr">
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/tovar_icon.svg" alt="">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/ohlazhdenie_icon.svg" alt="">
 							</div>
-							Индивидуальная упаковка
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">Вакуум</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								260×170×60 <span>мм</span>
+							<div class="popup-product-chars__txt">
+								Охлажденный продукт
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								1100 <span>г</span>
+						<div class="popup-product-chars__item">
+							<div class="popup-product-chars__icon">
+								<img src="img/svg/time_icon.svg" alt="">
+							</div>
+							<div class="popup-product-chars__txt">
+								14 суток
+								<span>Срок годности, от 0 до +4°С</span>
 							</div>
 						</div>
 					</div>
-					<div class="popup-product-descr__item">
-						<div class="popup-product-descr__title">
-							<div class="popup-product-descr__icon">
-								<img src="img/svg/transport_icon.svg" alt="">
-							</div>
-							Транспортная упаковка
+					<div class="product__chars">
+						<div class="char-item">
+							<div class="char__count">210</div>
+							Ккал
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Тип упаковки</div>
-							<div class="popup-product-descr-char__indicator">
-								Г/Я малый
+						<div class="char-item">
+							<div class="char__count">18</div>
+							Жиры
+						</div>
+						<div class="char-item">
+							<div class="char__count">13</div>
+							Белки
+						</div>
+					</div>
+					<div class="popup-product-descr">
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/tovar_icon.svg" alt="">
+								</div>
+								Индивидуальная упаковка
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">Вакуум</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									260×170×60 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									1100 <span>г</span>
+								</div>
 							</div>
 						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Размер</div>
-							<div class="popup-product-descr-char__indicator">
-								570×370×75 <span>мм</span>
+						<div class="popup-product-descr__item">
+							<div class="popup-product-descr__title">
+								<div class="popup-product-descr__icon">
+									<img src="img/svg/transport_icon.svg" alt="">
+								</div>
+								Транспортная упаковка
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Вес</div>
-							<div class="popup-product-descr-char__indicator">
-								4,4 <span>кг</span>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Тип упаковки</div>
+								<div class="popup-product-descr-char__indicator">
+									Г/Я малый
+								</div>
 							</div>
-						</div>
-						<div class="popup-product-descr-char">
-							<div class="popup-product-descr-char__title">Количество вложений</div>
-							<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Размер</div>
+								<div class="popup-product-descr-char__indicator">
+									570×370×75 <span>мм</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Вес</div>
+								<div class="popup-product-descr-char__indicator">
+									4,4 <span>кг</span>
+								</div>
+							</div>
+							<div class="popup-product-descr-char">
+								<div class="popup-product-descr-char__title">Количество вложений</div>
+								<div class="popup-product-descr-char__indicator">4 <span>шт</span></div>
+							</div>
 						</div>
 					</div>
 				</div>
