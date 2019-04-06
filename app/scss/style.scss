@@ -143,17 +143,17 @@
 .menu-mobile{
 	display: none;
 	position: fixed;
-	top: 60px;
+	top: 0;
 	width: 100%;
 	padding: 35px 20px 75px 20px;
     background: #DF2527;
     text-align: center;
-    z-index: 4;
-    max-height: calc(100vh - 60px);
+    z-index: 10;
+    max-height: 100vh;
     overflow-y: auto;
     height: 100vh;
-    min-height: 10vh;
-
+    min-height: 100vh;
+	padding-top: 85px;
     
 }
 
@@ -178,7 +178,7 @@
 
 .menu-mobile__link{
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	font-size: 24px;
 	color: #fff;
 	&:last-child{
@@ -671,8 +671,8 @@
 
 .history-info--mobile{
 	display: none;
-}
 
+}
 
 .fp-viewing-history{
 	.history-info{

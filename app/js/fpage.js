@@ -144,9 +144,11 @@ $(document).ready(function() {
 			},
             open: function(){
                 $('body').addClass('noscroll');
+				$('html').addClass('noscroll');
             },
             close: function() {
-                 $('body').removeClass('noscroll');
+                $('body').removeClass('noscroll');
+				$('html').removeClass('noscroll');
             }
 		},
 

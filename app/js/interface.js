@@ -25,6 +25,7 @@ $(document).ready(function() {
 		$('.menu-mobile').slideToggle(100);
 		$('.page-header').toggleClass('active');
 		$('body').toggleClass('fixed');
+		$('html').toggleClass('fixed');
 	});
 
 
