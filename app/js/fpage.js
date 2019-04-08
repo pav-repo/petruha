@@ -115,6 +115,11 @@ $(document).ready(function() {
 		fullpage_api.moveTo('raffle', 1);
 	});
 
+	$("body").on("click", ".js-scrollToMarinade1", function(e){
+		e.preventDefault();
+		fullpage_api.moveTo('product', 1);
+	});
+
 
 
 	var $btns = $('.product-filter__item').click(function(e) {

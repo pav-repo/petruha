@@ -820,7 +820,7 @@
 }
 
 .product__img{
-	margin: 0 -34px -85px;
+	margin: 0 -10px -35px;
 	text-align: center;
 	img{
 		display: block;
@@ -921,6 +921,22 @@
 		}
 		.top-slider-blur:before {
 		    background: rgba(190, 1, 29, 0.4);
+		}
+	}
+	&.orange-sqheme-second{
+		.top-slider__txt span {
+		    background: #FFB800;
+		}
+		.top-slider-blur:before {
+		    background: rgba(255, 184, 0, 0.4);
+		}
+	}
+	&.red-sqheme-second{
+		.top-slider__txt span {
+		    background: #DF2527;
+		}
+		.top-slider-blur:before {
+		    background: rgba(223, 37, 39, 0.4);
 		}
 	}
 }
